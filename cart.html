@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Tech Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/jpg" href="img/icon.jpg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Tech Store</a></h1>
+            <nav>
+                <ul>
+                   <li><a href="index.html">Trang chủ</a></li>
+                     <li><a href="#products">Sản phẩm</a></li>
+                      <li><a href="cart.html" class="active">Giỏ hàng</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Giỏ Hàng</h2>
+          <table class="cart-table" id="cart-table">
+            <thead>
+                <tr>
+                   <th>Tên sản phẩm</th>
+                   <th>Giá</th>
+                   <th>Số lượng</th>
+                   <th>Tổng cộng</th>
+                 </tr>
+            </thead>
+             <tbody id="cart-items">
+             </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan='3' style='text-align:right'><strong>Tổng tiền:</strong></td>
+                    <td id="cart-total"><strong>0 VNĐ</strong></td>
+                </tr>
+              </tfoot>
+        </table>
+        <div class="cart-action">
+            <a href="checkout.html" class="btn" id="checkout-btn">Đặt hàng</a>
+          <a href="index.html" class="btn view-all">Tiếp tục mua sắm</a>
+        </div>
+         <p class="empty-cart" id="empty-cart">Giỏ hàng của bạn đang trống.</p>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2025 Tech Store. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

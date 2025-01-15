@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán - Tech Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/jpg" href="img/icon.jpg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Tech Store</a></h1>
+            <nav>
+                <ul>
+                     <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#products">Sản phẩm</a></li>
+                     <li><a href="cart.html">Giỏ hàng</a></li>
+                      <li><a href="#contact">Liên hệ</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Thông Tin Đặt Hàng</h2>
+         <h3>Sản phẩm đã chọn:</h3>
+         <table class="cart-table" id="checkout-table">
+            <thead>
+                 <tr>
+                      <th>Tên sản phẩm</th>
+                       <th>Giá</th>
+                    </tr>
+             </thead>
+             <tbody id="checkout-items">
+             </tbody>
+             <tfoot>
+                <tr>
+                   <td style="text-align:right"><strong>Tổng tiền:</strong></td>
+                    <td id="checkout-total"><strong>0 VNĐ</strong></td>
+                  </tr>
+             </tfoot>
+        </table>
+        <h3>Thông tin giao hàng</h3>
+        <div class="checkout-form">
+            <div class="form-group">
+                <label for="name">Họ và Tên:</label>
+                <input type="text" id="name" name="name" required placeholder="Nhập họ và tên">
+            </div>
+            <div class="form-group">
+                 <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Nhập email">
+            </div>
+           <div class="form-group">
+              <label for="phone">Số Điện Thoại:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Nhập số điện thoại">
+            </div>
+             <div class="form-group">
+               <label for="address">Địa Chỉ:</label>
+                 <textarea id="address" name="address" required placeholder="Nhập địa chỉ"></textarea>
+            </div>
+            <br>
+          <a href="order_confirmation.html" class="btn" id="complete-order-link">Hoàn Tất Đặt Hàng</a>
+        </div>
+    </main>
+   <footer>
+        <div class="container">
+            <p>© 2025 Tech Store. All rights reserved.</p>
+        </div>
+   </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
